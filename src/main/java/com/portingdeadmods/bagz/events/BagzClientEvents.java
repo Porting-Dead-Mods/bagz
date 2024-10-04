@@ -1,14 +1,13 @@
-package com.portingdeadmods.quantumstorage.events;
+package com.portingdeadmods.bagz.events;
 
-import com.portingdeadmods.quantumstorage.QuantumStorage;
-import net.minecraft.client.Minecraft;
+import com.portingdeadmods.bagz.Bagz;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 
-public class QSClientEvents {
-    @EventBusSubscriber(modid = QuantumStorage.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+public class BagzClientEvents {
+    @EventBusSubscriber(modid = Bagz.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)

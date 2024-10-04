@@ -1,7 +1,7 @@
-package com.portingdeadmods.quantumstorage.registries;
+package com.portingdeadmods.bagz.registries;
 
-import com.portingdeadmods.quantumstorage.QuantumStorage;
-import net.minecraft.core.registries.Registries;
+import com.portingdeadmods.bagz.Bagz;
+import com.portingdeadmods.bagz.content.items.BagItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
@@ -13,10 +13,12 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-public class QSItems {
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(QuantumStorage.MODID);
+public class BagzItems {
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Bagz.MODID);
     public static final List<ItemLike> CREATIVE_TAB_ITEMS = new ArrayList<>();
     public static final List<Supplier<BlockItem>> BLOCK_ITEMS = new ArrayList<>();
+
+    public static final DeferredItem<BagItem> BAG = registerItem("bag", BagItem::new);
 
     public static <T extends Item> DeferredItem<T> registerItem(String name, Function<Item.Properties, T> itemConstructor, Item.Properties properties) {
         return registerItem(name, itemConstructor, properties, true);
