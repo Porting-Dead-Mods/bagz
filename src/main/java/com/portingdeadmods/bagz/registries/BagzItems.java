@@ -2,6 +2,7 @@ package com.portingdeadmods.bagz.registries;
 
 import com.portingdeadmods.bagz.Bagz;
 import com.portingdeadmods.bagz.content.items.BagItem;
+import com.portingdeadmods.bagz.content.items.SocketedEnderEyeItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
@@ -35,7 +36,7 @@ public class BagzItems {
     public static final DeferredItem<BagItem> BAG_MAGENTA = registerItem("bag_magenta", BagItem::new);
     public static final DeferredItem<BagItem> BAG_LIME = registerItem("bag_lime", BagItem::new);
 
-    public static final DeferredItem<Item> SOCKETED_ENDER_EYE = registerItem("socketed_ender_eye", Item::new, new Item.Properties());
+    public static final DeferredItem<SocketedEnderEyeItem> SOCKETED_ENDER_EYE = registerItem("socketed_ender_eye", SocketedEnderEyeItem::new, new Item.Properties());
 
     public static <T extends Item> DeferredItem<T> registerItem(String name, Function<Item.Properties, T> itemConstructor, Item.Properties properties) {
         return registerItem(name, itemConstructor, properties, true);
