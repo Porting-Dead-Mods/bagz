@@ -1,4 +1,20 @@
 {
   "bagz.creative_tab.main": "Bagz",
-  "items.bagz.bag": "Bag"
+  "item.bagz.bag_black": "Black Bag",
+  "item.bagz.bag_blue": "Blue Bag",
+  "item.bagz.bag_brown": "Brown Bag",
+  "item.bagz.bag_cyan": "Cyan Bag",
+  "item.bagz.bag_gray": "Gray Bag",
+  "item.bagz.bag_green": "Green Bag",
+  "item.bagz.bag_light_blue": "Light Blue Bag",
+  "item.bagz.bag_light_gray": "Light Gray Bag",
+  "item.bagz.bag_lime": "Lime Bag",
+  "item.bagz.bag_magenta": "Magenta Bag",
+  "item.bagz.bag_orange": "Orange Bag",
+  "item.bagz.bag_pink": "Pink Bag",
+  "item.bagz.bag_purple": "Purple Bag",
+  "item.bagz.bag_red": "Red Bag",
+  "item.bagz.bag_white": "White Bag",
+  "item.bagz.bag_yellow": "Yellow Bag",
+  "item.bagz.socketed_ender_eye": "Socketed Ender Eye"
 }

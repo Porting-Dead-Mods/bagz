@@ -18,7 +18,24 @@ public class BagzItems {
     public static final List<ItemLike> CREATIVE_TAB_ITEMS = new ArrayList<>();
     public static final List<Supplier<BlockItem>> BLOCK_ITEMS = new ArrayList<>();
 
-    public static final DeferredItem<BagItem> BAG = registerItem("bag", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_RED = registerItem("bag_red", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_GREEN = registerItem("bag_green", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_BLUE = registerItem("bag_blue", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_YELLOW = registerItem("bag_yellow", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_PURPLE = registerItem("bag_purple", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_ORANGE = registerItem("bag_orange", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_BLACK = registerItem("bag_black", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_WHITE = registerItem("bag_white", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_PINK = registerItem("bag_pink", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_BROWN = registerItem("bag_brown", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_GRAY = registerItem("bag_gray", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_LIGHT_GRAY = registerItem("bag_light_gray", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_CYAN = registerItem("bag_cyan", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_LIGHT_BLUE = registerItem("bag_light_blue", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_MAGENTA = registerItem("bag_magenta", BagItem::new);
+    public static final DeferredItem<BagItem> BAG_LIME = registerItem("bag_lime", BagItem::new);
+
+    public static final DeferredItem<Item> SOCKETED_ENDER_EYE = registerItem("socketed_ender_eye", Item::new, new Item.Properties());
 
     public static <T extends Item> DeferredItem<T> registerItem(String name, Function<Item.Properties, T> itemConstructor, Item.Properties properties) {
         return registerItem(name, itemConstructor, properties, true);

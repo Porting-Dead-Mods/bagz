@@ -15,7 +15,7 @@ public class BagzCreativeTab {
 
     public static final Supplier<CreativeModeTab> CREATIVE_TAB = CREATIVE_MODE_TABS.register("main", () -> CreativeModeTab.builder()
             .title(Component.translatable("bagz.creative_tab.main"))
-            .icon(() -> Items.ENDER_CHEST.asItem().getDefaultInstance())
+            .icon(() -> BagzItems.SOCKETED_ENDER_EYE.asItem().getDefaultInstance())
             .displayItems((params, output) -> {
                 for (ItemLike item : BagzItems.CREATIVE_TAB_ITEMS) {
                     output.accept(item);
