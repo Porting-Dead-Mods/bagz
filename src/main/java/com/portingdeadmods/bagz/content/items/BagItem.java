@@ -2,6 +2,7 @@ package com.portingdeadmods.bagz.content.items;
 
 import com.portingdeadmods.bagz.Bagz;
 import com.portingdeadmods.bagz.content.menus.BagContainer;
+import com.portingdeadmods.bagz.content.menus.BagMenuColored;
 import com.portingdeadmods.bagz.data.DataComponents;
 import com.portingdeadmods.bagz.content.menus.BagMenu;
 import net.minecraft.client.color.item.ItemColor;
@@ -79,13 +80,47 @@ public class BagItem extends Item implements ItemColor, MenuProvider {
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("items.bagz.bag");
+        return Component.translatable(String.format("item.bagz.bag_%S", color));
     }
 
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int containerId, Inventory playerInventory, Player player) {
-        return new SimpleMenuProvider((id, inv, player1) -> new BagMenu(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+        switch(color) {
+            case "red":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuRed(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "green":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuGreen(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "blue":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuBlue(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "yellow":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuYellow(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "purple":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuPurple(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "cyan":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuCyan(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "white":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuWhite(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "black":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuBlack(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "orange":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuOrange(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "pink":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuPink(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "brown":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuBrown(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "gray":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuGray(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "light_gray":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuLightGray(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "lime":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuLime(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "magenta":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuMagenta(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            case "light_blue":
+                return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuLightBlue(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+            default: return new SimpleMenuProvider((id, inv, player1) -> new BagMenu(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
+        }
     }
 
     @Override

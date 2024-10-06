@@ -30,20 +30,20 @@ public class BagMenu extends AbstractContainerMenu {
         // 9 rows of 15 slots
         for (int height = 0; height < 9; height++) {
             for (int width = 0; width < 15; width++) {
-                this.addSlot(new Slot(container, width + height * 15, 18 + width * 18, 18 + height * 18));
+                this.addSlot(new Slot(container, width + height * 15, 18 + width * 18, 9 + height * 18));
             }
         }
 
         // Player inventory
         for (int i1 = 0; i1 < 3; i1++) {
             for (int k1 = 0; k1 < 9; k1++) {
-                this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 18*4 + k1 * 18, 180 + i1 * 18));
+                this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 18*4 + k1 * 18, 189 + i1 * 18));
             }
         }
 
         // Hotbar
         for (int j1 = 0; j1 < 9; j1++) {
-            this.addSlot(new Slot(playerInventory, j1, 18*4 + j1 * 18, 243));
+            this.addSlot(new Slot(playerInventory, j1, 18*4 + j1 * 18, 270-18));
         }
     }
 
