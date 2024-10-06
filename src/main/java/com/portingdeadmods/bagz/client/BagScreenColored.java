@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 //May God forgive what programming war crime I have committed here.
 public class BagScreenColored {
     public static class BagScreenRed extends AbstractContainerScreen<BagMenuColored.BagMenuRed> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_red");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_red.png");
 
         public BagScreenRed(BagMenuColored.BagMenuRed menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -42,7 +42,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenGreen extends AbstractContainerScreen<BagMenuColored.BagMenuGreen> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_green");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_green.png");
 
         public BagScreenGreen(BagMenuColored.BagMenuGreen menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -72,7 +72,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenBlue extends AbstractContainerScreen<BagMenuColored.BagMenuBlue> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_blue");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_blue.png");
 
         public BagScreenBlue(BagMenuColored.BagMenuBlue menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -102,7 +102,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenYellow extends AbstractContainerScreen<BagMenuColored.BagMenuYellow> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_yellow");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_yellow.png");
 
         public BagScreenYellow(BagMenuColored.BagMenuYellow menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -132,7 +132,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenPurple extends AbstractContainerScreen<BagMenuColored.BagMenuPurple> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_purple");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_purple.png");
 
         public BagScreenPurple(BagMenuColored.BagMenuPurple menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -162,7 +162,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenCyan extends AbstractContainerScreen<BagMenuColored.BagMenuCyan> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_cyan");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_cyan.png");
 
         public BagScreenCyan(BagMenuColored.BagMenuCyan menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -192,7 +192,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenWhite extends AbstractContainerScreen<BagMenuColored.BagMenuWhite> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_white");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_white.png");
 
         public BagScreenWhite(BagMenuColored.BagMenuWhite menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -222,7 +222,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenBlack extends AbstractContainerScreen<BagMenuColored.BagMenuBlack> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_black");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_black.png");
 
         public BagScreenBlack(BagMenuColored.BagMenuBlack menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -252,7 +252,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenOrange extends AbstractContainerScreen<BagMenuColored.BagMenuOrange> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_orange");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_orange.png");
 
         public BagScreenOrange(BagMenuColored.BagMenuOrange menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -282,7 +282,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenPink extends AbstractContainerScreen<BagMenuColored.BagMenuPink> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_pink");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_pink.png");
 
         public BagScreenPink(BagMenuColored.BagMenuPink menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -312,7 +312,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenBrown extends AbstractContainerScreen<BagMenuColored.BagMenuBrown> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_brown");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_brown.png");
 
         public BagScreenBrown(BagMenuColored.BagMenuBrown menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -342,7 +342,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenGray extends AbstractContainerScreen<BagMenuColored.BagMenuGray> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_gray");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_gray.png");
 
         public BagScreenGray(BagMenuColored.BagMenuGray menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -372,7 +372,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenLightGray extends AbstractContainerScreen<BagMenuColored.BagMenuLightGray> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_light_gray");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_light_gray.png");
 
         public BagScreenLightGray(BagMenuColored.BagMenuLightGray menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -402,7 +402,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenMagenta extends AbstractContainerScreen<BagMenuColored.BagMenuMagenta> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_magenta");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_magenta.png");
 
         public BagScreenMagenta(BagMenuColored.BagMenuMagenta menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -432,7 +432,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenLime extends AbstractContainerScreen<BagMenuColored.BagMenuLime> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_lime");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_lime.png");
 
         public BagScreenLime(BagMenuColored.BagMenuLime menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
@@ -461,7 +461,7 @@ public class BagScreenColored {
 
 
     public static class BagScreenLightBlue extends AbstractContainerScreen<BagMenuColored.BagMenuLightBlue> {
-        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_light_blue");
+        private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_light_blue.png");
 
         public BagScreenLightBlue(BagMenuColored.BagMenuLightBlue menu, Inventory playerInventory, Component title) {
             super(menu, playerInventory, title);
