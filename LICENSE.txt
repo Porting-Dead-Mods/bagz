@@ -1,8 +1,8 @@
 MIT License
 
-Copyright (c) 2023 NeoForged project
+Copyright (c) 2023 Porting Dead Mods
 
-This license applies to the template files as supplied by github.com/NeoForged/MDK
+This license applies to the files hosted in this repository @ https://github.com/Porting-Dead-Mods/bagz
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
