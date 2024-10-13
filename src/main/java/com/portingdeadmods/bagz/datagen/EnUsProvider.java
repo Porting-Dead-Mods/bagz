@@ -33,6 +33,7 @@ public class EnUsProvider extends LanguageProvider {
         add("item.bagz.bag_light_blue", "Light Blue Bag");
         add("item.bagz.bag_magenta", "Magenta Bag");
         add("item.bagz.bag_lime", "Lime Bag");
+        add("item.bagz.personal_bag", "Personal Bag");
 
         add("tooltip.bagz.socketed_ender_eye_1", "You feel like it can see through you... neat!");
         add("tooltip.bagz.socketed_ender_eye_2", "It can see... it can see everything...");

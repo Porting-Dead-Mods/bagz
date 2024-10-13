@@ -3,6 +3,7 @@ package com.portingdeadmods.bagz.registries;
 import com.portingdeadmods.bagz.Bagz;
 import com.portingdeadmods.bagz.content.menus.BagMenu;
 import com.portingdeadmods.bagz.content.menus.BagMenuColored;
+import com.portingdeadmods.bagz.content.menus.PersonalBagMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
@@ -17,6 +18,10 @@ public class BagzMenus {
 
     /*public static final Supplier<MenuType<BagMenu>> BAG_MENU =
             registerMenuType("bag_menu", BagMenu::new); */
+
+
+    public static final Supplier<MenuType<PersonalBagMenu>> PERSONAL_BAG_MENU =
+            registerMenuType("personal_bag_menu", PersonalBagMenu::new);
 
     public static final Supplier<MenuType<BagMenu>> BAG_MENU =
             registerMenuType("bag_menu", BagMenu::new);

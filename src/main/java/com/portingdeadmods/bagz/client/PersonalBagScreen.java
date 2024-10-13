@@ -2,7 +2,7 @@ package com.portingdeadmods.bagz.client;
 
 import com.portingdeadmods.bagz.Bagz;
 import com.portingdeadmods.bagz.Config;
-import com.portingdeadmods.bagz.content.menus.BagMenu;
+import com.portingdeadmods.bagz.content.menus.PersonalBagMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
@@ -12,12 +12,13 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class BagScreen extends AbstractContainerScreen<BagMenu> {
+public class PersonalBagScreen extends AbstractContainerScreen<PersonalBagMenu> {
+
     private final boolean isCustomTexture = Config.customBagTextures;
     private final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag");
     private final ResourceLocation VANILLA_CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(Bagz.MODID, "textures/gui/bag_vanilla");
 
-    public BagScreen(BagMenu menu, Inventory playerInventory, Component title) {
+    public PersonalBagScreen(PersonalBagMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
         this.imageHeight = 279;
         this.imageWidth = 306;

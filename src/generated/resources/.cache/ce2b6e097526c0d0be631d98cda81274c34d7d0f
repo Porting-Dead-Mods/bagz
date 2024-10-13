@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-05T08:56:35.572957	Item Models: bagz
+// 1.21.1	2024-10-13T13:15:17.4370166	Item Models: bagz
 4e256223d623206394ea5180c294074272f094c4 assets/bagz/models/item/bag_black.json
 c5e752f54e583c736074ffe7a25dfa58a04b89af assets/bagz/models/item/bag_blue.json
 730c45467acc2d4c776920ba2a94755bbc1f0392 assets/bagz/models/item/bag_brown.json
@@ -15,4 +15,5 @@ d042874461142535a1a919ec7fb2d0a3bfbda95e assets/bagz/models/item/bag_purple.json
 5c48ef7ca648022ae64016836b894cd4ae7032ba assets/bagz/models/item/bag_red.json
 4f394fa42fa6b3e6d17ac39046b0fba057e1f327 assets/bagz/models/item/bag_white.json
 31fe26e1254f05e67c124be8fc58577e34aa7ad0 assets/bagz/models/item/bag_yellow.json
+094b2e8a3fe32e1b83e7149d12d2221b62bc2aa7 assets/bagz/models/item/personal_bag.json
 231cab4138683b6d10a4d103de1379f2f72c30f0 assets/bagz/models/item/socketed_ender_eye.json

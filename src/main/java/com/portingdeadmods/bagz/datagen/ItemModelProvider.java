@@ -39,5 +39,6 @@ public class ItemModelProvider extends net.neoforged.neoforge.client.model.gener
         basicItem(BagzItems.BAG_MAGENTA.get());
         basicItem(BagzItems.BAG_LIME.get());
         basicItem(BagzItems.SOCKETED_ENDER_EYE.get());
+        basicItem(BagzItems.PERSONAL_BAG.get());
     }
 }

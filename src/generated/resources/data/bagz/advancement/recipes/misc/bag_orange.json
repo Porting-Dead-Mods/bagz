@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "bagz:socketed_ender_eye"
+            "items": "minecraft:ender_chest"
           }
         ]
       },

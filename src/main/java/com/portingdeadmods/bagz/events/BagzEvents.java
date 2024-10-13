@@ -3,6 +3,8 @@ package com.portingdeadmods.bagz.events;
 import com.portingdeadmods.bagz.Bagz;
 import com.portingdeadmods.bagz.client.BagScreen;
 import com.portingdeadmods.bagz.client.BagScreenColored;
+import com.portingdeadmods.bagz.client.PersonalBagConfigScreen;
+import com.portingdeadmods.bagz.client.PersonalBagScreen;
 import com.portingdeadmods.bagz.registries.BagzMenus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -31,6 +33,8 @@ public class BagzEvents {
             event.register(BagzMenus.BAG_MENU_MAGENTA.get(), BagScreenColored.BagScreenMagenta::new);
             event.register(BagzMenus.BAG_MENU_LIGHT_BLUE.get(), BagScreenColored.BagScreenLightBlue::new);
             event.register(BagzMenus.BAG_MENU_LIME.get(), BagScreenColored.BagScreenLime::new);
+
+            event.register(BagzMenus.PERSONAL_BAG_MENU.get(), PersonalBagScreen::new);
         }
 
     }

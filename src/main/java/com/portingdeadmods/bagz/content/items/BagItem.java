@@ -26,9 +26,6 @@ public class BagItem extends Item implements  MenuProvider {
     public BagItem(String color) {
         super(new Properties()
                 .stacksTo(1)
-                .component(DataComponents.RED, (byte) 255)
-                .component(DataComponents.GREEN, (byte) 255)
-                .component(DataComponents.BLUE, (byte) 255)
         );
         this.color = color;
         this.bagContainer = new BagContainer(color);
@@ -36,8 +33,6 @@ public class BagItem extends Item implements  MenuProvider {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-
-
         player.openMenu(this);
         return InteractionResultHolder.success(player.getItemInHand(usedHand));
     }
