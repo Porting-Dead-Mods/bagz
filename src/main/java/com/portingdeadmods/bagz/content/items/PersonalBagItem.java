@@ -26,9 +26,9 @@ public class PersonalBagItem extends Item implements MenuProvider {
 
     public PersonalBagItem() {
         super(new Properties()
-                .component(DataComponents.RED, (byte) 255)
-                .component(DataComponents.GREEN, (byte) 255)
-                .component(DataComponents.BLUE, (byte) 255)
+                .component(DataComponents.RED, (byte) 15)
+                .component(DataComponents.GREEN, (byte) 15)
+                .component(DataComponents.BLUE, (byte) 15)
                 .stacksTo(1)
         );
     }
@@ -43,10 +43,10 @@ public class PersonalBagItem extends Item implements MenuProvider {
         Byte blue = dataComponents.get(DataComponents.BLUE.get());
 
         if (red != null && green != null && blue != null) {
-            color = (red << 16) | (green << 8) | blue;
+            color = (red << 8) | (green << 4) | blue;
         } else {
             Bagz.LOGGER.error("Color data not found in personal bag, defaulting to white frequency");
-            color = 0xFFFFFF;
+            color = 0xFFF;
         }
 
         bagContainer = new BagContainer(Integer.toHexString(color));
@@ -60,6 +60,11 @@ public class PersonalBagItem extends Item implements MenuProvider {
             player.openMenu(this);
             return InteractionResultHolder.success(itemstack);
         }
+    }
+
+    // 12 bit color code
+    public Integer getColor() {
+        return color;
     }
 
     @Override

@@ -13,6 +13,7 @@ import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -20,15 +21,16 @@ import org.jetbrains.annotations.Nullable;
 
 
 public class BagItem extends Item implements  MenuProvider {
-    public final String color;
+    public final DyeColor color;
+
     public final BagContainer bagContainer;
 
-    public BagItem(String color) {
+    public BagItem(DyeColor color) {
         super(new Properties()
                 .stacksTo(1)
         );
         this.color = color;
-        this.bagContainer = new BagContainer(color);
+        this.bagContainer = new BagContainer(color.getName());
     }
 
     @Override
@@ -40,13 +42,13 @@ public class BagItem extends Item implements  MenuProvider {
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable(String.format("item.bagz.bag_%S", color));
+        return Component.translatable(String.format("item.bagz.bag_%S", color.getName()));
     }
 
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int containerId, Inventory playerInventory, Player player) {
-        switch(color) {
+        switch(color.getName()) {
             case "red":
                 return new SimpleMenuProvider((id, inv, player1) -> new BagMenuColored.BagMenuRed(id, inv, bagContainer), getDisplayName()).createMenu(containerId, playerInventory, player);
             case "green":
